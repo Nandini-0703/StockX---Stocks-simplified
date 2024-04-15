@@ -1,0 +1,55 @@
+.newssearch {
+  margin-top: 120px;
+  display: flex;
+  width: 500px;
+  justify-content: center !important;
+  align-items: center !important;
+  margin-bottom: 50px;
+  position: relative;
+  left: 35%;
+}
+
+.newsimage {
+  position: static;
+  top: 0;
+  width: 100%;
+}
+
+.newsgrid {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.newsinfocard {
+  border-radius: 20px !important;
+  min-height: 450px;
+}
+
+.analysenews {
+  margin-left: 15px !important;
+  background-color: blueviolet !important;
+  color: white !important;
+  display: block !important;
+  margin-bottom: 10px !important;
+}
+
+.css-dnrpxu-MuiCardActions-root {
+  display: block !important;
+}
+
+.displaycompany {
+  background-color: #e6e6fa;
+}
+
+.css-dnrpxu-MuiCardActions-root > :not(style) ~ :not(style) {
+  margin-bottom: 2px;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .newssearch {
+    width: 90%;
+    left: 5%;
+  }
+}

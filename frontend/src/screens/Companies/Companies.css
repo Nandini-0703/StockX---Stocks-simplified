@@ -1,0 +1,41 @@
+.searchnews {
+  margin-top: 180px !important;
+}
+
+.allcompaniesgrid {
+  width: 50% !important;
+  margin-left: 25% !important;
+  border-radius: 20px !important;
+}
+
+.onepaper {
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px !important;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gridcompany {
+  font-weight: bold !important;
+  font-size: large;
+}
+
+.gridbutton {
+  background-color: blueviolet !important;
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  .allcompaniesgrid {
+    margin-left: 0 !important;
+    width: 100% !important;
+    position: static !important;
+  }
+
+  .companiescontainer {
+    position: static !important;
+    width: 100vw !important;
+  }
+}

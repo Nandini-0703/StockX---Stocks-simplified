@@ -1,0 +1,45 @@
+.stockinfocontainer {
+  width: 550px;
+  margin-left: 30%;
+
+  border-radius: 30px !important;
+  margin-bottom: 50px;
+  padding: 20px !important;
+}
+
+.stockinfotable {
+  border-radius: 20px !important;
+  margin-top: 50px;
+  margin-left: 20px;
+  background-color: #e6e6fa !important;
+}
+
+.keyparams {
+  font-size: 30px !important;
+  color: brown;
+  margin-top: 100px !important;
+  width: 1000px !important;
+  font-weight: bold !important;
+}
+
+.tableheading {
+  font-weight: bold !important;
+  color: purple !important;
+}
+
+@media (max-width: 480px) {
+  .stockinfocontainer {
+    position: static;
+    margin-left: 2px;
+    width: 90%;
+  }
+
+  .keyparams {
+    font-size: 30px !important;
+    color: brown;
+    margin-top: 100px !important;
+    width: 100% !important;
+    font-weight: bold !important;
+    margin-left: 25px !important;
+  }
+}

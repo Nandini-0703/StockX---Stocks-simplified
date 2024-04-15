@@ -1,0 +1,97 @@
+.financialreportcontainer {
+  margin-top: 150px;
+  justify-content: center !important;
+  align-items: center !important;
+  position: absolute;
+  left: 25%;
+}
+
+.financialreportcontainer h1 {
+  font-size: large;
+  margin-bottom: 50px;
+  left: 50px;
+  position: relative;
+}
+
+.financialreportcontainer button {
+  top: 45%;
+  position: relative;
+  width: 150px;
+}
+
+.dropzonearea {
+  height: 300px;
+  width: 750px;
+  background-color: #d8d8d8;
+  border-radius: 30px !important;
+}
+
+.analyzebutton {
+  background-color: #662d91;
+  color: white;
+  position: relative;
+  left: 39%;
+  margin-top: 30px;
+}
+
+img {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  left: 45%;
+  position: absolute;
+}
+
+.removebutton {
+  top: 60% !important;
+  position: absolute !important;
+  left: 40% !important;
+}
+
+.analysisresult {
+  position: fixed;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.analysisresult span {
+  font-weight: bold;
+}
+
+.analysisloader {
+  position: absolute !important;
+  left: 50% !important;
+  color: white !important;
+}
+
+@media (max-width: 480px) {
+  .financialreportcontainer {
+    width: 100%;
+    position: static;
+    left: 0;
+  }
+
+  .dropzonearea {
+    height: 300px;
+    width: 90%;
+    background-color: #d8d8d8;
+    border-radius: 30px !important;
+    margin-left: 20px;
+  }
+
+  .analyzebutton {
+    background-color: #662d91;
+    color: white;
+    position: relative;
+    left: 30%;
+    margin-top: 30px;
+  }
+
+  .financialreportcontainer h1 {
+    font-size: large;
+    margin-bottom: 50px;
+    left: 20px;
+    position: relative;
+  }
+}

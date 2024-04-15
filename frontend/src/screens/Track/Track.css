@@ -1,0 +1,48 @@
+.trackcontainer {
+  position: relative !important;
+
+  margin-top: 20%;
+  display: flex !important;
+  flex-direction: column;
+}
+
+.trackitem {
+  display: flex !important;
+  justify-content: space-between !important;
+  width: 50%;
+  margin-bottom: 10px !important;
+  margin-left: 25%;
+  background-color: #e6e6fa;
+  padding: 15px;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.removetracker {
+  background-color: blueviolet;
+  color: white;
+}
+
+.notrack {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+@media (max-width: 480px) {
+  .notrack {
+    font-size: 30px;
+    margin-top: 20%;
+  }
+
+  .trackcontainer {
+    margin-top: 80%;
+  }
+
+  .trackitem {
+    width: 95%;
+    position: static;
+    margin-left: 2%;
+  }
+}

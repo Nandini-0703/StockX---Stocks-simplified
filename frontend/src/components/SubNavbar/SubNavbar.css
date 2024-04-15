@@ -1,0 +1,35 @@
+.subNavbar {
+  background-color: #e6e6fa;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  margin-top: 90px;
+  height: 50px;
+  border-radius: 20px;
+  z-index: 2000;
+  margin-left: 10%;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.subnavheading {
+  font-size: large !important;
+  text-decoration: none !important;
+}
+
+.subnavheading:hover {
+  text-decoration: none !important;
+}
+
+.MuiLink-underlineHover:hover {
+  text-decoration: none !important;
+}
+
+@media (max-width: 480px) {
+  .subNavbar {
+    width: 100vw;
+    margin-left: 0;
+  }
+}

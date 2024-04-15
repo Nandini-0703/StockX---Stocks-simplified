@@ -1,0 +1,104 @@
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  background-color: #e6e6fa;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-radius: 20px;
+  margin-top: 5px;
+
+  gap: 50px;
+}
+
+.menuelements {
+  font-size: larger;
+}
+
+.menuelements:hover {
+  text-decoration: none !important;
+}
+
+nav .stockstitle {
+  font-size: 2rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+nav .stockstitle:hover {
+  text-decoration: none;
+}
+
+nav .navbtn {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 1.5rem;
+  right: 0.75rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+nav button {
+  background-color: #662d91 !important;
+}
+
+@media (max-width: 480px) {
+  #navbar {
+    position: static;
+    width: 100%;
+  }
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+    border-radius: 5px;
+  }
+
+  .menuelements {
+    display: none;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column !important;
+    width: 95%;
+    margin-bottom: 1.25rem;
+    margin-left: 6px;
+    text-align: center;
+    gap: 7px;
+  }
+
+  nav .navbtn {
+    display: none;
+  }
+
+  .logout {
+    display: none !important;
+  }
+}

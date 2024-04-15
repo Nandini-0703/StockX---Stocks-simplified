@@ -1,0 +1,20 @@
+.logincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  background-color: #e6e6fa;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 480px) {
+  .logincontainer {
+    position: static;
+    width: 90%;
+    margin-top: 40%;
+    margin-left: 15px;
+  }
+}
