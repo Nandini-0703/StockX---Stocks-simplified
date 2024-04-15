@@ -36,7 +36,7 @@ const FinancialReport = () => {
     formData.append("file", acceptedFiles[0]);
 
     axios
-      .post("http://localhost:5555/analysereport", formData, {
+      .post("https://stockx-simplified.onrender.com/analysereport", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

@@ -10,15 +10,18 @@ const Track = () => {
   const fetchMyData = async () => {
     console.log(localStorage.getItem("userEmail"));
 
-    await fetch("http://localhost:5555/stocks/mytrackedcompany", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: localStorage.getItem("userEmail"),
-      }),
-    }).then(async (res) => {
+    await fetch(
+      "https://stockx-simplified.onrender.com/stocks/mytrackedcompany",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: localStorage.getItem("userEmail"),
+        }),
+      }
+    ).then(async (res) => {
       let response = await res.json();
 
       setTrackedCompany(response);
@@ -28,7 +31,7 @@ const Track = () => {
   const handleRemove = async (companyName) => {
     try {
       const response = await fetch(
-        "http://localhost:5555/stocks/removeTrackedCompany",
+        "https://stockx-simplified.onrender.com/stocks/removeTrackedCompany",
         {
           method: "POST",
           headers: {

@@ -22,7 +22,7 @@ const Companies = () => {
     let userEmail = localStorage.getItem("userEmail");
 
     const response = await axios
-      .post("http://localhost:5555/stocks/trackeddata", {
+      .post("https://stockx-simplified.onrender.com/stocks/trackeddata", {
         company_data: companyName,
         email: userEmail,
       })

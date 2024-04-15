@@ -38,7 +38,9 @@ const StockInfo = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5555/stocks/info/?query=${company}`)
+      .get(
+        `https://stockx-simplified.onrender.com/stocks/info/?query=${company}`
+      )
       .then(function (res) {
         setInformation(res.data.data);
       })

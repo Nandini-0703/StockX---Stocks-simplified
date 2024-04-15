@@ -20,7 +20,7 @@ const Login = () => {
     };
 
     axios
-      .post("http://localhost:5555/api/loginuser", data)
+      .post("https://stockx-simplified.onrender.com/api/loginuser", data)
       .then((res) => {
         localStorage.setItem("authToken", res.data.authToken);
         localStorage.setItem("userEmail", credentials.email);

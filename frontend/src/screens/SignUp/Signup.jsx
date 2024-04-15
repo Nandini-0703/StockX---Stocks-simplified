@@ -23,7 +23,7 @@ const Signup = () => {
     };
     console.log(credentials);
     axios
-      .post("http://localhost:5555/api/createuser", data)
+      .post("https://stockx-simplified.onrender.com/api/createuser", data)
       .then(() => {
         console.log(data);
         navigate("/login");

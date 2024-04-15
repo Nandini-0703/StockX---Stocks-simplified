@@ -41,7 +41,7 @@ const NewsCards = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5555/all")
+      .get("https://stockx-simplified.onrender.com/all")
       .then((response) => {
         setNews(response.data.articles);
       })
@@ -61,7 +61,7 @@ const NewsCards = () => {
       content: news.content,
     };
     axios
-      .post("http://localhost:5555/analyze", newsData)
+      .post("https://stockx-simplified.onrender.com/analyze", newsData)
       .then(function (res) {
         console.log(res.data);
 
