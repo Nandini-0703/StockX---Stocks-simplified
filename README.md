@@ -54,6 +54,21 @@ To run this project, you will need to add the following environment variables to
 - Google cloud language Library
 
 
+## Screenshots
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(45).png) 
+
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(46).png)
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(47).png)
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(49).png)
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(50).png)
+
+![Screenshot 2024-02-25 111825](https://raw.githubusercontent.com/Nandini-0703/StockX---Stocks-simplified/master/frontend/public/screenshots/Screenshot(51).png)
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
