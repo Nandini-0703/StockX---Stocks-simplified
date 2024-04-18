@@ -54,12 +54,6 @@ To run this project, you will need to add the following environment variables to
 - Google cloud language Library
 
 
-
-## Screenshots
-
-![App Screenshot](https://drive.google.com/file/d/1S0AykRZXwn9N32bDPg1wRfiw88Q0rDnV/view/468x300?text=App+Screenshot+Here)
-
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
