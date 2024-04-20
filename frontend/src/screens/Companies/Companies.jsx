@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-
 import Navbar from "../../components/Navbar/Navbar";
-
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import SubNavbar from "../../components/SubNavbar/SubNavbar";
 import "../Companies/Companies.css";
 
@@ -11,45 +9,51 @@ const Companies = () => {
   const [company, setCompany] = useState([]);
   const [search, setSearch] = useState("");
 
-  const Navigate = useNavigate();
+  useEffect(() => {
+    axios
+      .get("/util/companyname.json")
+      .then((response) => {
+        const jsonData = response.data;
+        setCompany(jsonData); // Ensure that jsonData is an array
+      })
+      .catch((error) => {
+        console.error("Error fetching JSON:", error);
+      });
+  }, []); // Empty dependency array to fetch data only once
 
   const handleResponse = async (companyName) => {
     if (!localStorage.getItem("authToken")) {
-      alert("login first");
-      exit(0);
+      alert("Login first");
+      return;
     }
 
     let userEmail = localStorage.getItem("userEmail");
 
-    const response = await axios
-      .post("https://stockx-simplified.onrender.com/stocks/trackeddata", {
-        company_data: companyName,
-        email: userEmail,
-      })
-      .then((response) => {
-        console.log("comapany response", response);
-        if (response.data.success == false) {
-          alert("you are already tracking this company");
-          return;
+    try {
+      const response = await axios.post(
+        "https://stockx-simplified.onrender.com/stocks/trackeddata",
+        {
+          company_data: companyName,
+          email: userEmail,
         }
-        if (response.status === 200) {
-          alert("tracker added ");
-        }
-      })
-      .catch((error) => {
-        alert("error occurred . please check the console");
-        console.log(error);
-      });
+      );
+
+      console.log("Company response", response.data);
+
+      if (response.data.success === false) {
+        alert("You are already tracking this company");
+        return;
+      }
+
+      if (response.status === 200) {
+        alert("Tracker added");
+      }
+    } catch (error) {
+      console.error("Error occurred:", error);
+      alert("Error occurred. Please check the console");
+    }
   };
-  axios
-    .get("/util/companyname.json")
-    .then((response) => {
-      const jsonData = response.data;
-      setCompany(jsonData);
-    })
-    .catch((error) => {
-      console.error("Error fetching JSON:", error);
-    });
+
   return (
     <div className="companiescontainer">
       <Navbar />
@@ -63,9 +67,7 @@ const Companies = () => {
           placeholder="Search"
           aria-label="Search"
           value={search}
-          onChange={(e) => {
-            setSearch(e.target.value);
-          }}
+          onChange={(e) => setSearch(e.target.value)}
         />
         <button className="btn btn-outline-success" type="submit">
           Search
@@ -74,9 +76,7 @@ const Companies = () => {
       <div className="allcompaniesgrid">
         {company
           .filter((item) =>
-            item["Company Name"]
-              .toLowerCase()
-              .includes(search.toLocaleLowerCase())
+            item["Company Name"].toLowerCase().includes(search.toLowerCase())
           )
           .map((company, index) => (
             <div className="onepaper" key={index}>
