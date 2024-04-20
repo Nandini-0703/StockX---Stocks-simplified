@@ -1,13 +1,8 @@
 import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
+
 import { useState, useEffect } from "react";
 import axios from "axios";
-import Grid from "@material-ui/core/Grid";
-import { makeStyles } from "@material-ui/core/styles";
+
 import { Link } from "react-router-dom";
 import useLoading from "../hooks/loading-hook";
 import CircularWithValueLabel from "../SmallLoader";

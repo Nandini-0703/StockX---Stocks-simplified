@@ -1,14 +1,12 @@
 import React from "react";
 
-import { useTheme } from "@material-ui/core/styles";
 import { Button } from "@mui/material";
-// import Link from "@material-ui/core/Link";
+
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
 
 export default function DenseAppBar() {
-  const theme = useTheme();
   const navigate = useNavigate();
   const handleLogout = () => {
     localStorage.removeItem("authToken");

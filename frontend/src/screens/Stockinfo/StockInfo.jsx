@@ -6,7 +6,7 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import { Typography } from "@material-ui/core";
+
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import "../Stockinfo/Stockinfo.css";

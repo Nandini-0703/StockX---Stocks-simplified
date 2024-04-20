@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Grid, Paper, Typography } from "@material-ui/core";
+
 import Navbar from "../../components/Navbar/Navbar";
-import Button from "@material-ui/core/Button";
+
 import { Link, useNavigate } from "react-router-dom";
 import SubNavbar from "../../components/SubNavbar/SubNavbar";
 import "../Companies/Companies.css";
