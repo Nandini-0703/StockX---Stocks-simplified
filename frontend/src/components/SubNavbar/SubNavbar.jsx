@@ -1,19 +1,19 @@
 import React from "react";
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import "./subNavbar.css";
 
 const SubNavbar = () => {
   return (
     <div className="subNavbar">
-      <Link href="/company" className="subnavheading">
+      <a href="/company" className="subnavheading">
         All Companies
-      </Link>
+      </a>
 
       {localStorage.getItem("authToken") ? (
         <>
-          <Link href="/tracked" className="subnavheading">
+          <a href="/tracked" className="subnavheading">
             Tracked Companies
-          </Link>
+          </a>
         </>
       ) : null}
     </div>

@@ -56,9 +56,9 @@ const Companies = () => {
       <div className="subnavbar">
         <SubNavbar />
       </div>
-      <form class="d-flex" className="newssearch searchnews">
+      <form className="d-flex newssearch searchnews">
         <input
-          class="form-control me-2"
+          className="form-control me-2"
           type="search"
           placeholder="Search"
           aria-label="Search"
@@ -67,11 +67,11 @@ const Companies = () => {
             setSearch(e.target.value);
           }}
         />
-        <button class="btn btn-outline-success" type="submit">
+        <button className="btn btn-outline-success" type="submit">
           Search
         </button>
       </form>
-      <Grid container spacing={3} className="allcompaniesgrid">
+      <div className="allcompaniesgrid">
         {company
           .filter((item) =>
             item["Company Name"]
@@ -79,32 +79,21 @@ const Companies = () => {
               .includes(search.toLocaleLowerCase())
           )
           .map((company, index) => (
-            <Grid item xs={12}>
-              <Paper className="onepaper">
-                <Typography
-                  variant="body1"
-                  data-company={company["Company Name"]}
-                >
-                  <Link
-                    to={`/stock/info/${company["Company Name"]}`}
-                    className="gridcompany"
-                  >
-                    {" "}
-                    {company["Company Name"]}
-                  </Link>
-                </Typography>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  className="gridbutton"
-                  onClick={() => handleResponse(company["Company Name"])}
-                >
-                  Track
-                </Button>
-              </Paper>
-            </Grid>
+            <div className="onepaper" key={index}>
+              <p className="gridcompany" data-company={company["Company Name"]}>
+                <Link to={`/stock/info/${company["Company Name"]}`}>
+                  {company["Company Name"]}
+                </Link>
+              </p>
+              <button
+                className="gridbutton"
+                onClick={() => handleResponse(company["Company Name"])}
+              >
+                Track
+              </button>
+            </div>
           ))}
-      </Grid>
+      </div>
     </div>
   );
 };

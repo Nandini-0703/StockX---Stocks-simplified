@@ -39,3 +39,59 @@
     width: 100vw !important;
   }
 }
+
+.companiescontainer {
+  padding: 20px;
+}
+
+.subnavbar {
+  margin-bottom: 20px;
+}
+
+.newssearch {
+  margin-bottom: 20px;
+}
+
+.newssearch input[type="search"] {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.allcompaniesgrid {
+  /* display: grid; */
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.onepaper {
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.onepaper .gridcompany {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.onepaper .gridcompany:hover {
+  color: #007bff;
+}
+
+.onepaper .gridbutton {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.onepaper .gridbutton:hover {
+  background-color: #0056b3;
+}

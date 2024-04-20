@@ -2,7 +2,7 @@ import React from "react";
 
 import { useTheme } from "@material-ui/core/styles";
 import { Button } from "@mui/material";
-import Link from "@material-ui/core/Link";
+// import Link from "@material-ui/core/Link";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import { useState } from "react";
@@ -20,9 +20,9 @@ export default function DenseAppBar() {
   return (
     <div>
       <nav id="navbar">
-        <Link href="/" className="stockstitle">
+        <a href="/" className="stockstitle">
           StockX
-        </Link>
+        </a>
         <div
           className="menu"
           onClick={() => {
@@ -33,27 +33,27 @@ export default function DenseAppBar() {
           <span></span>
           <span></span>
         </div>
-        <Link href="/news" className={menuOpen ? "open" : "menuelements"}>
+        <a href="/news" className={menuOpen ? "open" : "menuelements"}>
           News
-        </Link>
-        <Link href="/company" className={menuOpen ? "open" : "menuelements"}>
+        </a>
+        <a href="/company" className={menuOpen ? "open" : "menuelements"}>
           Companies
-        </Link>{" "}
-        <Link href="/report" className={menuOpen ? "open" : "menuelements"}>
+        </a>{" "}
+        <a href="/report" className={menuOpen ? "open" : "menuelements"}>
           Report
-        </Link>
+        </a>
         {!localStorage.getItem("authToken") ? (
           <div className={menuOpen ? "open" : "navbtn"}>
             {" "}
             <Button variant="h6">
-              <Link href="/login" style={{ color: "white" }} underline="none">
+              <a href="/login" style={{ color: "white" }} underline="none">
                 Login
-              </Link>
+              </a>
             </Button>
             <Button variant="h6">
-              <Link href="/signup" style={{ color: "white" }} underline="none">
+              <a href="/signup" style={{ color: "white" }} underline="none">
                 Signup
-              </Link>
+              </a>
             </Button>
           </div>
         ) : (

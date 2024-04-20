@@ -51,9 +51,7 @@ const StockInfo = () => {
 
   return (
     <div className="stockinfocontainer">
-      <Typography className="keyparams">
-        Key Parameters for {company}{" "}
-      </Typography>
+      <h1 className="keyparams">Key Parameters for {company} </h1>
       <TableContainer component={Paper} className="stockinfotable">
         <Table aria-label="simple table">
           <TableHead>
