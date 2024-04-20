@@ -21,6 +21,7 @@
 }
 
 .newsinfocard {
+  background-color: white;
   border-radius: 20px !important;
   min-height: 450px;
 }
