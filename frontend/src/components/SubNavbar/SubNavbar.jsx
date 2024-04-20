@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./subNavbar.css";
+import "../SubNavbar/SubNavbar.css";
 
 const SubNavbar = () => {
   return (
