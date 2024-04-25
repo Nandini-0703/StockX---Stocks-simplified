@@ -11,7 +11,7 @@ Stocks Simplified
 
 - The user is also notified when the price of a particular company’s stocks are expected to fall or rise based on the current world news, via email.
 
-- Stonks also allows you to analyze financial reports of a company to understand if it's profitable to invest in its stock
+- StockX also allows you to analyze financial reports of a company to understand if it's profitable to invest in its stock
 ## Run Locally
 
 - Instructions to run the backend 
